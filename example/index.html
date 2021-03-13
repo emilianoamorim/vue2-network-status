@@ -4,10 +4,28 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Get my network status</title>
+    <style>
+        .wrapper {
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper img {
+            margin: 0 auto;
+            width: 70%;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" class="wrapper">
+        <p>Press F12 to open DevTools and select network tab. Click on <b>Offline</b> mode.</p>
+        <img src="./chrome-dev-tools-network.png">
         <vue2-network-status>
             <h1 class="animate__animated animate__bounce">Ops! You are offline!</h1>
         </vue2-network-status>
