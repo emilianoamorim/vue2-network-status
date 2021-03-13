@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Get my network status</title>
+</head>
+
+<body>
+    <div id="app">
+        <vue2-network-status>
+            <h1 class="animate__animated animate__bounce">Ops! You are offline!</h1>
+        </vue2-network-status>
+    </div>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/vue2-network-status@1.0.0/dist/vue2-network-status.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            components: {
+                Vue2NetworkStatus: window['Vue2NetworkStatus']
+            },
+        })
+    </script>
+</body>
+
+</html>
